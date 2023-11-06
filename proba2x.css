@@ -1,0 +1,106 @@
+body {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0%;
+  height: 100vh;
+  display: flex;
+  background-color: rgb(255, 255, 255);
+ 
+}
+
+.dugme1 {
+  background-color: black;
+  color: white;
+  border: none;
+  height: 45px;
+  width: 105px;
+  border-radius: 2px;
+  cursor: pointer;
+  margin-right: 25px;
+  margin-left: 25px;
+  transition: opacity 0.15s;
+}
+.dugme1:hover {
+  opacity: 0.8;
+}
+.dugme1:active {
+ opacity: 0.5;
+}
+
+.dugme2 {
+ background-color:rgb(255, 216, 20);
+ border-color: yellow;
+ border-radius: 15px;
+ border-style: none;
+ color: white;
+ height: 36px;
+ width: 225px;
+ font-size: 15px;
+ cursor: pointer;
+ margin-right: 25px;
+ margin-top: 15px;
+}
+
+.dugme2:hover {
+  background-color: rgb(234, 234, 87);
+  color:rgb(255, 216 20) ;
+}
+.dugme2:active {
+  opacity: 0.5;
+}
+
+.dugme3 { 
+background-color: rgb(46, 164, 79);
+color: white;
+border: none;
+height: 45px;
+width: 120px;
+border-radius: 7px;
+font-weight: bold;  
+font-size: 15px;
+cursor: pointer;
+transition: box-shadows 0.15s;
+}
+.dugme3:hover {
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+.dugme4 {
+background-color: rgb(121, 82, 179);
+color: white;
+border-radius: 4px;
+height: 45px; 
+width:140px ;
+border-style: none;
+margin-top: 20px;
+margin-left: 25px;
+font-size: 90%;
+font-style: 15px Arial;
+}
+
+.dugme4:hover {
+  background-color: blueviolet;
+}
+
+.dugme5 {
+background-color:white;
+color: rgb(108, 117, 125);
+border-radius: 4px;
+height: 45px; 
+width:140px ;
+margin-left: 15px;
+border-color: rgb(108, 117, 125);
+font-size: 90%;
+font-style: 14px Arial;
+transition: background-color 1s;
+border-color: rgb(108, 117, 125);
+border-style: solid;
+transition: background-color 0.15s,
+color 0.15s;
+
+}
+
+.dugme5:hover {
+background-color: rgb(108, 117, 125);
+color: white;
+}

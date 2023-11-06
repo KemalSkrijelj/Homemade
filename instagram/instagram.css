@@ -1,0 +1,95 @@
+body {
+  margin: 0;
+  padding: 0;
+  
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;  
+ display: flex;
+ flex-direction: row;
+}
+.left {
+  width: 50%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+.right {
+  width: 50%;
+  background-color: white;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  
+}
+.card1 {
+  height: 400px;
+  width: 350px;
+  border: 0.3px solid;
+  border-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0;
+}
+.up {
+  display: flex;
+  justify-content: center;
+  height: 30%;
+  width: 100%;
+}
+.down { 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70%;
+  width: 100%;
+}
+.linija1 {
+  width: 290px;
+  border: 2px solid rgb(79, 79, 255);
+  margin-left: 10px;
+}
+.linija2 {
+  width: 290px;
+  border: 2px solid rgb(79, 79, 255);
+  display: flex;
+  align-items: end;
+  margin-left: 10px;
+
+}
+.dugme1 {
+  width: 310px;
+  font-size: 20px;
+  color: white;
+  background-color: rgb(79, 79, 255);
+  border-radius: 6px;
+  height: 30px;
+}
+.dugme1:hover {
+  cursor: pointer;
+  color: white;
+}
+.dugme1:active {
+  color: white;
+  background-color: red;
+}
+.h2 {
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  
+}
+.lozinka {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}

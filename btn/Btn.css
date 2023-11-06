@@ -1,0 +1,80 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+.container {
+  width: 100%;
+  min-height: 50vh;
+  background-color: white;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.MyBtn {
+  background-color: green;
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  color: white;
+  padding: 15px 25px 15px 25px;
+  cursor: pointer;
+  
+}
+.MyBtn:hover {
+ box-shadow: 2px 3px 10px black;
+
+}
+.MyBtn:active {
+ transform: translateX(2px) translateY(2px);
+ box-shadow: 1px 2px 5px black;
+}
+.MyBtn2 {
+  background-color: green;
+  position: absolute;
+  left: 200px;
+  top: 100px;
+  color: white;
+  padding: 15px 25px 15px 25px;
+  cursor: pointer;
+  border: none;
+}
+.MyBtn2:active {
+ transform: scale(2);
+ transition: 1s all ease-in;
+ border: green;
+}
+.container2 {
+  width: 100%;
+  height: 50vh;
+  background-color: red;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.One {
+  background-color: green;
+  padding: 10px 16px 10px 16px;
+  cursor: pointer;
+}
+.One:hover {
+  
+  padding: 10px 50px 10px 50px;
+}
+.Two {
+  background-color: green;
+  padding: 10px 16px 10px 16px;
+ cursor: pointer;
+}
+.two:hover {
+  padding: 10px 50px 10px 50px;
+}
+.Three{
+  background-color: green;
+  padding: 10px 16px 10px 16px;
+
+}
+.container3 {
+  min-height: 50vh;
+  width: 100%;
+  background-color: orange;
+}
