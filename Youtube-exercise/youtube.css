@@ -1,0 +1,360 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+.container {
+  min-height: 100vh;
+  width: 100%;
+  background-color:white;
+  position: relative;
+  box-sizing: border-box;
+}
+.search-bar {
+  position: absolute;
+  left: 500px;
+  top: 10px;
+  width: 482px;
+  height: 40px;
+  border-bottom-left-radius: 40px;
+  border-top-left-radius: 40px;
+  font-size: 20px;
+  border:2px solid rgb(211, 211, 211);
+  font-family: 'Roboto', sans-serif;
+}
+.btn {
+  position: absolute;
+  top: 10px;
+  left: 988px;
+  height: 45px;
+  width: 64px;
+  background-color: rgb(248, 248, 248);
+  border:2px solid rgb(211, 211, 211);
+  border-top-right-radius: 40px;
+  border-bottom-right-radius: 40px;
+  text-align: center;
+  cursor: pointer;
+}
+.fa-search {
+  font-size: 20px;
+}
+.Menu {
+  display: flex;
+}
+.scroll {
+  font-size: 50px;
+  cursor: pointer;
+  position: absolute;
+  margin: 0;
+  left: 10px;
+}
+.scroll:hover {
+  background-color: gray;
+  scale: 1.2;
+  border-radius: 30%;
+}
+.DropDownMenu {
+  width: 99.8px;
+  height:950px;
+  position: fixed;
+  top: 60px;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10px;
+  gap: 15px;
+}
+.Menu:hover .DropDownMenu {
+  display: flex;
+}
+.list {
+  font-size: 15px;
+  cursor: pointer;
+}
+.icons {
+  font-size: 30px;
+  cursor: pointer;
+}
+.yt {
+  width: 150px;
+  height: 40px;
+  position: absolute;
+  left: 100px;
+  top: 10px;
+  cursor: pointer;
+}
+.GoodFellas {
+  width: 400px;
+  position: absolute;
+  top: 100px;
+  left: 130px;  
+  cursor: pointer;
+}
+.music-name1 {
+  font-size: 20px;
+  position: absolute;
+  left: 130px;
+  top: 320px;
+  width: 350px;
+  cursor: pointer;
+  font-family: 'Nunito Sans', sans-serif;
+  color: black;
+}
+.p1 {
+  position: absolute;
+  left: 130px;
+  top: 370px;
+}
+.TudaCuProci {
+  width: 400px;
+  position: absolute;
+  left: 580px;
+  top: 100px;
+  cursor: pointer;
+}
+.music-name2 {
+  font-size: 20px;
+  position: absolute;
+  left: 580px;
+  top: 320px;
+  cursor: pointer;
+  font-family: 'Nunito Sans', sans-serif;
+  color: black;
+}
+.p2 {
+  position: absolute;
+  left: 580px;
+  top: 350px;
+}
+.Ceca {
+  width: 400px;
+  position: absolute;
+  left: 1035px;
+  top: 100px;
+  cursor: pointer;
+}
+.music-name3 {
+  font-size: 20px;
+  position: absolute;
+  left: 1035px;
+  top: 320px;
+  cursor: pointer;
+  font-family: 'Nunito Sans', sans-serif;
+  color: black;
+}
+.p3 {
+  position: absolute;
+  left: 1035px;
+  top: 350px;
+}
+.LaMelo {
+  width: 400px;
+  position: absolute;
+  top: 430px;
+  left: 130px;  
+  cursor: pointer;
+}
+.music-name4 {
+  font-size: 20px;
+  position: absolute;
+  left: 130px;
+  top: 650px;
+  width: 350px;
+  cursor: pointer;
+  font-family: 'Nunito Sans', sans-serif;
+  color: black;
+}
+.p4 {
+  position: absolute;
+  left: 130px;
+  top: 680px;
+}
+.Html-css {
+  width: 400px;
+  position: absolute;
+  left: 580px;
+  top: 430px;
+  cursor: pointer;
+}
+.music-name5 {
+  font-size: 20px;
+  position: absolute;
+  left: 580px;
+  top: 650px;
+  cursor: pointer;
+  font-family: 'Nunito Sans', sans-serif;
+  color: black;
+}
+.p5 {
+  position: absolute;
+  left: 580px;
+  top: 680px;
+}
+.Sponsored {
+  width: 400px;
+  position: absolute;
+  left: 1035px;
+  top: 430px;
+  cursor: pointer;
+}
+.music-name6 {
+  font-size: 16px;
+  position: absolute;
+  left: 1035px;
+  top: 650px;
+  cursor: pointer;
+  font-family: 'Nunito Sans', sans-serif;
+  color: black;
+}
+.p6 {
+  position: absolute;
+  left: 1035px;
+  top: 665px;
+}
+.Btn-sponsored {
+  position: absolute;
+  left: 1035px;
+  bottom: 10px;
+  width: 400px;
+  height: 36px;
+  background-color: lightblue;
+  color: darkblue;
+  font-size: 18px;
+  font-family: 'Nunito Sans', sans-serif;
+  text-align: center;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+}
+@media only screen and (max-width: 450px) {
+  .container {
+    width: 100%;
+    height: 2050px;
+  }
+  .Menu {
+    display: inline-block;
+    position: relative;
+  }
+  .scroll {
+    font-size: 40px;
+    position: absolute;
+    left: 40px;
+   }
+   .scroll:hover {
+     cursor: pointer;
+     scale: 1.1;
+   }
+   .DropDownMenu {
+     width: 100px;
+     height: 650px;
+     position: fixed;
+     top: 55px;
+     left: 0px;
+     display: none; 
+     gap: 15px;
+   }
+   .scroll:active .DropDownMenu {
+    display: block;
+   }
+   .search-bar {
+    width: 200px;
+    display: flex;
+    position: absolute;
+    left: 124px;
+    top: 20px;
+  }
+  .btn {
+    position: absolute;
+    top: 20px;
+    left: 330px;
+  }
+  .GoodFellas {
+    width: 310px;
+    left: 100px;  
+  }
+  .music-name1 {
+    left: 100px;
+    top: 270px;
+    width: 300px;
+  }
+  .p1 {
+    left: 100px;
+    top: 330px;
+  }
+  .TudaCuProci {
+    width: 310px;
+    left: 100px;
+    top: 400px;
+  }
+  .music-name2 {
+    left: 100px;
+    top: 570px;
+  }
+  .p2 {
+    left: 100px;
+    top: 600px;
+  }
+  .Ceca {
+    width: 310px;
+    left: 100px;
+    top: 675px;
+  }
+  .music-name3 {
+    left: 100px;
+    top: 850px;
+  }
+  .p3 {
+    left: 100px;
+    top: 910px;
+  }
+  .LaMelo {
+    width: 310px;
+    top: 990px;
+    left: 100px;  
+  }
+  .music-name4 {
+    left: 100px;
+    top: 1170px;
+  }
+  .p4 {
+    left: 100px;
+    top: 1200px;
+  }
+  .Html-css {
+    width: 310px;
+    left: 100px;
+    top: 1280px;
+  }
+  .music-name5 {
+    left: 100px;
+    top: 1460px;
+  }
+  .p5 {
+    left: 100px;
+    top: 1525px;
+  }
+  .Sponsored {
+    width: 310px;
+    left: 100px;
+    top: 1610px;
+  }
+  .music-name6 {
+    left: 100px;
+    top: 1790px;
+  }
+  .p6 {
+    left: 100px;
+    top: 1835px;
+  }
+  .Btn-sponsored {
+    left: 100px;
+    top:  1880px;
+    width: 310px;
+  }
+  .yt {
+    width: 170px;
+    height: 60px;
+    left: 165px;
+    top: 1935px;
+  }
+}
