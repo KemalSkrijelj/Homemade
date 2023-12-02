@@ -1,0 +1,251 @@
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.main-head {
+  height: 5rem;
+  width: 100%;
+  background-color: #131c27;
+  color: white;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  display: flex;
+}
+nav {
+  width: 90%;
+  min-height: 5rem;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#logo {
+  font-size: 26px;
+  font-family: 'Pattaya', sans-serif;
+  font-weight: normal;
+}
+ ul,
+ a {  
+  font-size: 20px;
+  font-family: 'Poppins', sans-serif;
+  gap:8rem;
+  display: flex;
+  color: white ;
+  text-decoration: none ;
+  list-style: none;
+}
+.hero {
+  width: 100%;
+  height: 750px;
+  display: flex;
+  background-image: url(main_hero.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  font-family: 'Poppins', sans-serif;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+}
+.btn-hero {
+  padding: 20px 63px;
+  font-family: Arial;
+  font-size: 20px;
+  background-color: rgb(76, 110, 151);
+  color: white;
+  border: none;
+  margin-top: 45px;
+  cursor: pointer;
+  transition: background 0.5s ease-in;
+}
+.btn-hero:hover {
+  background: #27394e;
+}
+#locations {
+  width: 100%;
+  height: 900px;
+  background-image: url(new-york-page.png);
+  background-size: 100% 100%;
+  background-position:  center;
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  font-family: 'Poppins', sans-serif;
+  position: relative;
+  overflow: hidden;
+}
+
+.h3-locations {
+  width: 90%;
+  height: 12rem;
+  background: linear-gradient(#131c27, #663b34);
+  display: flex;
+  margin-left: 5rem;
+  margin-top: 0;
+}
+.cloud {
+  position: absolute;
+  top: 0%;
+  right: 0%;
+}
+.moving-cloud-1 {
+ animation: cloudAnimations 3.5s infinite alternate ease-in-out;
+} 
+.moving-cloud-2 {
+  top: 20%;
+  opacity: 1;
+  z-index: -1;
+ animation: cloudAnimations 3.5s infinite alternate ease-in-out;
+
+}
+
+@keyframes cloudAnimations {
+  from {
+   transform: translate(10%, -10%);
+  }
+  to {
+   transform: translate(0%,0%);
+  }
+}
+#benefits {
+  width: 100%;
+  height: 50rem;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+header {
+  width: 100%;
+  height: 30%;
+  background:#343c44;
+  display: flex;
+  color: white;
+  font-weight: bold;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.cards {
+  width: 90%;
+  height: 560px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+  gap: 20px ;
+}
+.card {
+  width: 270px;
+  height: 55%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  border: 0.2px solid;
+  box-shadow: 8px 13px  5px  rgb(195, 195, 195);
+}
+.card-icon {
+  width: 100%;
+  height: 45px;
+  background: #27394E;
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.p-cards {
+  font-size: 20px;
+  line-height: 1.8rem;
+  width: 250px;
+  margin: 0;
+  text-align: center;
+}
+.card:last-child {
+  height: 62%;
+  width: 270px;  
+}
+.card-icon1 {
+  height: 25%;
+  width: 100%;
+  background: #27394E;
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#contact {
+  width: 100%;
+  height: 800px;
+  background: url(mountain.jpg);
+  background-size: 100% 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card-contact {
+  width: 760px;
+  height: 510px;
+  background: rgb(0,0, 0, 0.6);
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  gap: 40px;
+  position: relative;
+}
+span {
+  font-size: 20px;
+}
+#input {
+  width: 260px;
+  height: 27px;
+  font-size: 1.4rem;
+  padding: 10px 30px;
+}
+.btn-contact {  
+  width: 100%;
+  height: 60px;
+  font: 18px Arial ;
+  background-color: rgb(76, 110, 151);
+  color: white;
+  border: none;
+  border-bottom-left-radius:30px ;
+  border-bottom-right-radius:30px ;
+  position: absolute;
+  bottom: 0;
+  cursor: pointer;
+  transition: background 0.5s ease-in;
+}
+.btn-contact:hover {
+  background: #27394e;
+}
+footer {
+  width: 100%;
+  height: 80px;
+  background-color: #131c27;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  color: white;
+  align-items: center;
+  position: relative;
+}
+.icons-footer {
+  width: 50%;
+  position: absolute;
+  right: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+.icons {
+  font-size: 30px;
+  cursor: pointer;
+}
