@@ -1,0 +1,401 @@
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.main-head {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  box-shadow: 10px 10px 10px rgb(165, 165, 165);
+}
+nav {
+  width: 90%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+h1 {
+  font-size: 33px;
+  color: black;
+  font-family: 'Great Vibes';
+}
+.nav-links {
+  display: flex;
+  gap: 50px;
+  list-style: none;
+  margin-right: 30px;
+}
+li, a {
+  font-size: 28px;
+  font-family: 'Frank Ruhl Libre', serif;
+  color: black;
+  text-decoration: none;
+}
+.burger {
+  display:none;
+}
+span {
+  height: 5px;
+  font-size: 50px;
+  cursor: pointer;
+}
+
+.hero {
+width: 100%;
+min-height: 41.7rem;
+display: flex;
+}
+.left {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: Ruhl, sans-serif;
+  gap: 35px;
+}
+h2 {
+  font-family: 'Frank Ruhl Libre', serif;
+  margin: 0;
+  font-size: 45px;
+  text-align: center;
+  width: 400px;
+}
+.hero-text {
+  color: #525252;
+  text-align: center;
+  width: 650px;
+  font-size: 30px;
+}
+.gallery-hero {
+  padding: 1.3rem 5rem;
+  border: 3px solid black;
+  font-size: 28px;
+  margin-bottom: 5rem;
+}
+.right {
+  width: 40%;
+  display: flex;
+  background: linear-gradient(#dad8dd, #dad1d4);
+  z-index: 2;
+  position: relative;
+}
+.hero-img1 {
+  width: 100%;
+  object-fit: cover;
+  overflow: clip;
+}
+.plant {
+  width: 350px;
+  height: 400px;
+  position: absolute;
+  left: -15%;
+  bottom: 0%;
+  z-index: -1;
+  transform: translateY(10%) rotateZ(-10deg) rotateX(-90deg);
+  animation: plant-entrance  1.5s  ease-in-out 0.5s forwards,
+    plant-shake 2.5s infinite ease alternate-reverse 2s;
+  transform-origin:top;
+}
+.plant2 {
+  width: 330px;
+  height: 400px;
+  position: absolute;
+  left: 41.5%;
+  bottom: 2%;
+  z-index: -2;
+  transform: translateY(10%) rotateZ(-10deg) rotateX(-90deg);
+  animation: plant-entrance  1.5s  ease-in-out 0.5s forwards,
+    plant-shake 2.5s infinite ease alternate-reverse 2s;
+}
+
+@keyframes plant-entrance {
+  from {
+   transform: translateY(10%) rotateZ(-10deg) rotateX(-90deg);
+  }
+  to {
+    transform: translateY(0%) rotateZ(0deg) rotateX(0deg);
+  }
+}
+@keyframes plant-shake {
+  from {
+   transform: rotateZ(-5deg);
+  }
+  to {
+    transform: rotateZ(0deg);
+  }
+}
+.about {
+  width: 100%;
+  min-height: 65rem;
+  display: flex;
+}
+.about-image {
+  width: 40%;
+  background-image: url(about-image.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+h5 {
+  font-size: 34px;
+  position: absolute;
+  top: 20%;
+  font-family: Ruhl, sans-serif;
+}
+.h2-media {
+  font-family: 'Frank Ruhl Libre', serif;
+  margin: 0;
+  font-size: 45px;
+  text-align: center;
+  width: 400px;
+  color: white;
+  margin-left: 30%;
+}
+.about-text {
+  width: 60%;
+  display: flex;
+  font-family: 'Frank Ruhl Libre', serif;
+  background-color: rgb(65, 65, 65);
+  justify-content: center;
+  flex-direction: column;
+}
+.about-life {
+  padding: 30px 80px;
+}
+h3 {
+  font-size: 40px;
+  color: white;
+  padding: 20px 0;
+  margin: 0;
+}
+p {
+  margin: 0;
+  color: white;
+  font-size: 34px;
+}
+.about-work {
+  padding: 30px 80px;
+}
+.about-contact {
+  padding: 30px 80px;
+}
+.gallery {
+  display: flex;
+  min-height: 134vh;
+  width: 100%;
+  grid-template-columns: repeat(3,1fr);
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.gallery-head {
+  background: rgba(0, 0, 0, 0.5);
+ display: flex;
+ padding: 4.2rem 7rem;
+ color: white;
+ gap: 20px;
+ flex-direction: column;
+ z-index: 1;
+}
+.img1-gallery {
+  width: 68%;
+  size: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.img2-gallery {
+  size: 80%;
+  height: 62.6rem;
+  width: 32%;
+  position: absolute;
+  right:  0;
+  top: 0;
+}
+.img3-gallery {
+  width: 34%;
+  height: 45%;
+  position: absolute;
+  left:  0%;
+  bottom: 0%;
+}
+.img4-gallery {
+  height: 45%;
+  width: 34%;
+  position: absolute;
+  bottom: 0;
+  left: 34%;
+}
+.contact {
+  display: flex;
+  width: 100%;
+  position: relative;
+}
+.h2-contact {
+  font-size: 4rem;
+  margin: 0;
+  margin-top: 12rem;
+}
+.form-wrapper {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Ruhl, sans-serif;
+  flex-direction: column;
+}
+.form-contact {
+  margin-top:7rem ;
+  width: 336px;
+   height: 190px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  font-family: Ruhl, sans-serif;
+}
+#email {
+  padding: 15px;
+  background: #414141;
+}
+.submit-button {
+  background: #906272;
+  padding: 10px 80px;
+  color: white;
+  border: none;
+  font-family: Arial;
+  font-size: 26px;
+  cursor: pointer;
+}
+.img-contact {
+  position: absolute;
+  right: 0;
+  size: 80% 80%;
+}
+.footer {
+  display: none;
+}
+@media only screen and (max-width: 450px) {
+  .main-head {
+  width: 100%;
+  }
+  .nav-links {
+    display: none;
+  }
+  .burger {
+    display: flex;
+  }
+  .hero {
+    display: flex;
+    flex-direction: column;
+  }
+  .left {
+    height: 35rem;
+    width: 100%;
+  }
+  h2 {
+    font-size: 40px;
+  }
+  .hero-text {
+    width: 150px;
+    font-size: 18px;
+  }
+  .gallery-hero {
+    margin-bottom: 2rem;
+  }
+  .right {
+    width: 100%;
+  }
+  .hero-img1 {
+    width: 100%;
+  }
+  .about {
+    width: 100%;
+    min-height: 100rem;
+    display: flex;
+    flex-direction: column;
+  }
+  .about-image {
+    height: 40rem;
+    width: 100%;
+  }
+  h5 {
+    top: 10%;
+  }
+  .h2-media {
+    margin-left: 0%;
+  }
+  .about-text {
+    width: 100%;
+    display: flex;
+  }
+  .gallery {
+    display: flex;
+    height: 1820px;
+    width: 100%;
+    grid-template-columns: repeat(3,1fr);
+    flex-direction: column;
+  }
+  .gallery-head {
+   display: none;
+  }
+  .img1-gallery {
+    width: 100%;
+    height: 200px;
+  }
+  .img2-gallery {
+    size:100%;
+    height: 830px;
+    width: 100%;
+    position: absolute;
+    right:  0;
+    top: 200px;
+  }
+  .img3-gallery {
+    width: 100%;
+    height: 417px;
+    position: absolute;
+    left:  0%;
+    top: 1030px;
+  }
+  .img4-gallery {
+    height: 415px;
+    width: 100%;
+    position: absolute;
+    top: 1447px;
+    left: 0%;
+  }
+  .contact {
+    width: 100%;
+    flex-direction: column;
+  }
+  .h2-contact {
+    margin-top: 0;
+  }
+  .form-wrapper {
+    width: 100%;
+    height: 55rem;
+  }
+  #email {
+    padding: 10px;
+  }
+  .img-contact {
+    display: none;
+  }
+  .footer {
+    background:#414141;
+    height: 130px;
+     width: 100%;
+     color: white;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+  }
+}
