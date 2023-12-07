@@ -1,0 +1,48 @@
+body {
+  padding: 0;
+  margin: 0;
+  background:url(background.jpg);
+  background-size: 100%;
+}
+.container {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+.login {
+  position: relative;
+  display: flex;
+  width: 30rem;
+  height: 35rem;
+  border-radius: 2rem;
+  background-color: white;
+  align-items: center;
+  flex-direction: column;
+  gap: 3rem;
+  opacity: 80%;
+}
+h1 {
+  text-align: center;
+  margin-top: 5rem;
+  margin-bottom: 0;
+  font-size: 3rem;
+  color: black;
+  font-family: 'Hedvig Letters Serif', serif;
+}
+
+#username {
+border-radius: 2rem;
+height: 4rem;
+width: 8rem;
+}
+#password {
+  border-right: none;
+  border-left: none;
+  border-top: none;
+ }
+ 
+.password {
+  margin-left: 5rem;
+}
