@@ -15,13 +15,20 @@
     <div class="login">
       <h1>Login</h1>
       <label for="name" class="username">
+        <i class="fa-solid fa-user user"></i>
         <input type="text" name="" id="username" placeholder="Username">
       </label>
       <label for="password" class="password">
-        <h2>Password</h2>
-        <i class="fa-solid fa-key"></i>
-        <input type="text" name="password" id="password" placeholder="Type your password">
+        <i class="fa-solid fa-lock fa-lock"></i>
+        <input type="password" name="password" id="password" placeholder="Password">
       </label>
+      <button type="submit">Login</button>
+      <a href="#forget-pass"><span>Forget password?</span></a>
+      <label for="checkbox" style="display: flex;flex-direction: row;position: absolute;bottom: 9rem;">
+        <input type="checkbox"><p>I have read and agree to the terms of service</p></label>
+        <label for="checkbox" style="display: flex; position: absolute;
+        bottom: 11rem;width: 400px;text-align: center;"><input type="checkbox"><p>I agree to receive general emails and product offers from this WebSite</p></label>
+        <p class="p-register">Don't have an account? <a href="#register">Register</a></p>
     </div>
   </div>
 </body>
