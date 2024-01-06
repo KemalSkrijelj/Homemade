@@ -1,0 +1,60 @@
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.container {
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background:url(background.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+h1{
+  color: blue;
+}
+.signup{
+  display: flex;
+  align-items: center;
+  width: 30%;
+  height: 30rem;
+  background-color: rgba(255, 255, 255, 20%);
+  border: 0.3rem solid white;
+  border-radius: 10px;
+  color: white;  
+  flex-direction: column;
+  font-family: 'Hedvig Letters Serif', serif;
+  gap: 15px;
+}
+#username,
+#email,
+#age,
+#phone,
+#password{
+  border-radius: 1rem;
+  width: 20rem;
+  font-size: 20px;
+  padding: 0.5rem;
+  border: none;
+  color: blue;
+}
+p{
+  color: black;
+}
+button {
+  background-color: blue;
+  color: white;
+  border: none;
+  width: 70%;
+  height: 40px;
+  margin-top: 0;
+  font-size: 20px;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+button:hover {
+  background-color: green;
+}
